@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+$verticalSpace: 1rem;
+
+.cooking-warning {
+  margin-bottom: $verticalSpace;
+
+  .cooking-warning-label {
+    color: $accent;
+    font-weight: bold;
+  }
+
+  .cooking-warning-table {
+    width: 100%;
+  }
+}
+
+.round-selector {
+  display: block;
+  margin-bottom: $verticalSpace;
+}
+
+.grill-wrapper {
+  width: fit-content;
+  background-color: $primary;
+  margin-bottom: $verticalSpace;
+}

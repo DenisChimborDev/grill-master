@@ -1,0 +1,277 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-sonarts"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "e2e/**/*.ts",
+      "**/*.spec.ts"
+    ]
+  },
+  "rules": {
+    "align": [
+      true,
+      "arguments",
+      "elements",
+      "members",
+      "parameters",
+      "statements"
+    ],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "arrow-return-shorthand": [
+      true,
+      "multiline"
+    ],
+    "await-promise": true,
+    "ban-comma-operator": true,
+    "binary-expression-operand-order": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "completed-docs": false,
+    "cyclomatic-complexity": [
+      true,
+      5
+    ],
+    "deprecation": true,
+    "encoding": true,
+    "component-class-suffix": true,
+    "contextual-lifecycle": true,
+    "directive-class-suffix": true,
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "import-spacing": true,
+      "jsdoc-format": [
+      true,
+      "check-multiline-start"
+    ],
+    "interface-name": false,
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "match-default-export-name": true,
+    "max-file-line-count": [
+      true,
+      300
+    ],
+    "member-access": [
+      true,
+      "check-accessor",
+      "check-constructor",
+      "check-parameter-property"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "protected-static-field",
+          "protected-instance-field",
+          "private-static-field",
+          "private-instance-field",
+          "constructor",
+          "public-static-method",
+          "public-instance-method",
+          "protected-instance-method",
+          "protected-static-method",
+          "private-static-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "newline-before-return": false,
+    "newline-per-chained-call": true,
+    "no-any": true,
+    "no-boolean-literal-compare": true,
+    "no-default-export": true,
+    "no-duplicate-imports": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": [
+      true,
+      "check-parameters"
+    ],
+    "no-dynamic-delete": true,
+    "no-floating-promises": true,
+    "no-for-in-array": true,
+    "no-implicit-dependencies": true,
+    "no-import-side-effect": [
+      true,
+      {
+        "ignore-module": "(\\.html|\\.css|\\.scss)$"
+      }
+    ],
+    "no-inferrable-types": false,
+    "no-inferred-empty-object-type": true,
+    "no-invalid-template-strings": true,
+    "no-invalid-this": true,
+    "no-irregular-whitespace": true,
+    "no-magic-numbers": true,
+    "no-mergeable-namespace": true,
+    "no-non-null-assertion": false,
+    "no-null-keyword": true,
+    "no-object-literal-type-assertion": true,
+    "no-parameter-properties": false,
+    "no-parameter-reassignment": true,
+    "no-redundant-jsdoc": true,
+    "no-require-imports": true,
+    "no-return-await": true,
+    "no-sparse-arrays": true,
+    "no-switch-case-fall-through": true,
+    "no-this-assignment": true,
+    "no-unbound-method": true,
+    "no-unnecessary-callback-wrapper": true,
+    "no-unnecessary-class": true,
+    "no-unnecessary-qualifier": true,
+    "no-unnecessary-type-assertion": true,
+    "no-unsafe-any": true,
+    "no-use-before-declare": true,
+    "no-void-expression": true,
+    "number-literal-format": true,
+    "one-variable-per-declaration": true,
+    "only-arrow-functions": [
+      true,
+      "allow-named-functions"
+    ],
+    "prefer-conditional-expression": [
+      true,
+      "check-else-if"
+    ],
+    "prefer-function-over-method": true,
+    "prefer-method-signature": true,
+    "prefer-object-spread": true,
+    "prefer-readonly": true,
+    "prefer-switch": true,
+    "prefer-template": true,
+    "prefer-while": true,
+    "promise-function-async": true,
+    "quotemark": [
+      true,
+      "avoid-escape",
+      "avoid-template",
+      "jsx-double",
+      "single"
+    ],
+    "restrict-plus-operands": true,
+    "return-undefined": true,
+    "space-within-parens": [
+      true,
+      0
+    ],
+    "strict-boolean-expressions": true,
+    "strict-type-predicates": true,
+    "switch-default": true,
+    "switch-final-break": true,
+    "triple-equals": true,
+    "type-literal-delimiter": true,
+    "typedef": [
+      true,
+      "array-destructuring",
+      "call-signature",
+      "member-variable-declaration",
+      "parameter",
+      "property-declaration"
+    ],
+    "use-default-type-parameter": true,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-preblock",
+      "check-rest-spread",
+      "check-separator",
+      "check-type",
+      "check-type-operator",
+      "check-typecast"
+    ],
+    "ext-variable-name": [
+      true,
+      [
+        "variable",
+        "camel"
+      ],
+      [
+        "property",
+        "camel"
+      ],
+      [
+        "parameter",
+        "camel"
+      ],
+      [
+        "method",
+        "camel"
+      ],
+      [
+        "function",
+        "camel"
+      ]
+    ],
+    "lines-between-class-members": true,
+    "no-inner-declarations": [
+      true,
+      "function"
+    ],
+    "no-big-function": [
+      true,
+      20
+    ],
+    "cognitive-complexity": [
+      true,
+      5
+    ],
+    "mccabe-complexity": [
+      true,
+      5
+    ]
+  },
+  "rulesDirectory": [
+    "codelyzer",
+    "node_modules/vrsource-tslint-rules/rules",
+    "node_modules/tslint-eslint-rules/dist/rules",
+    "node_modules/tslint-lines-between-class-members"
+  ]
+}

@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.item-details-table {
+  display: table;
+
+  .item-details-row {
+    display: table-row;
+
+    .item-details-cell {
+      display: table-cell;
+
+      &.item-details-field {
+        font-weight: bold;
+        color: $primary;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

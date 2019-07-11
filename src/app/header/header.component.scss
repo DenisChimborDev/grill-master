@@ -1,0 +1,6 @@
+@import '../../variables.scss';
+
+.header-title {
+  color: mat-color($primary-palette, default-contrast);
+  text-decoration: none;
+}

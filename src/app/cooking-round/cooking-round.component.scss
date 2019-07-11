@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.grill {
+  position: relative;
+
+  .menu-item {
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    border-color: mat-color($primary-palette, default-contrast);
+    margin: 0.125rem;
+  }
+}

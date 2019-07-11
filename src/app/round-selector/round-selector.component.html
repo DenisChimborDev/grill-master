@@ -1,0 +1,21 @@
+<div>
+  <button
+    mat-icon-button
+    i18n-aria-label
+    aria-label="Previous"
+    [disabled]="!isPreviousRoundAvailable()"
+    (click)="selectPreviousRound()"
+  >
+    <mat-icon>arrow_back_ios</mat-icon>
+  </button>
+  <span i18n>Round {{currentRoundIndex + 1}}/{{rounds?.length}}</span>
+  <button
+    mat-icon-button
+    i18n-aria-label
+    aria-label="Next"
+    [disabled]="!isNextRoundAvailable()"
+    (click)="selectNextRound()"
+  >
+    <mat-icon>arrow_forward_ios</mat-icon>
+  </button>
+</div>

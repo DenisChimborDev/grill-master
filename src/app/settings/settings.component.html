@@ -1,0 +1,22 @@
+<div class="mat-typography">
+  <h2 i18n>Settings</h2>
+  <div>
+    <mat-form-field>
+      <mat-label i18n>Service URL</mat-label>
+      <input matInput (ngModelChange)="handleUrlChange($event)" [(ngModel)]="settings.serviceUrl">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label i18n>Grill width</mat-label>
+      <input type="number" max="50" min="1" matInput (ngModelChange)="handleWidthChange($event)" [(ngModel)]="settings.grillWidth">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label i18n>Grill height</mat-label>
+      <input type="number" max="50" min="1" matInput (ngModelChange)="handleHeightChange($event)" [(ngModel)]="settings.grillHeight">
+    </mat-form-field>
+  </div>
+</div>
+

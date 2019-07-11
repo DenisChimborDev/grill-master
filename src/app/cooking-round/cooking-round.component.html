@@ -1,0 +1,18 @@
+<div class="grill" [ngStyle]="{
+  'width.rem': settings?.grillWidth,
+  'height.rem': settings?.grillHeight
+}">
+  <mat-button-toggle
+    *ngFor="let item of items"
+    class="menu-item"
+    title="{{item.menuItem.name}}"
+    (change)="handleItemClick(item)"
+    [checked]="selectedItem === item"
+    [ngStyle]="{
+      'width.rem': item.menuItem.width - 0.25,
+      'height.rem': item.menuItem.length - 0.25,
+      'top.rem': item.y,
+      'left.rem': item.x
+    }">
+  </mat-button-toggle>
+</div>

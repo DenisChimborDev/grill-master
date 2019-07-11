@@ -1,0 +1,5 @@
+<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<div *ngIf="menus !== undefined" class="content">
+  <app-menu-selector [menus]="menus" (menuChange)="handleMenuChange($event)" class="menu-selector"></app-menu-selector>
+  <app-cooking-information *ngIf="selectedMenu !== undefined" [menu]="selectedMenu"></app-cooking-information>
+</div>
