@@ -9,7 +9,7 @@ export class SettingsService {
   private settings: Settings = {
     grillHeight: 20,
     grillWidth: 30,
-    serviceUrl: 'http://isol-grillassessment.azurewebsites.net/api/GrillMenu',
+    serviceUrl: 'https://isol-grillassessment.azurewebsites.net/api/GrillMenu',
   };
 
   public getSettings(): Settings {
